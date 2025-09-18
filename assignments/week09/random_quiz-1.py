@@ -25,3 +25,24 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+import random
+
+def test_random():
+    #สุ่มเลขระหว่าง1-20
+    test_random = random.randint(1, 20)
+print("-- เกมทายตัวเลข มาเดาใจคอมพิวเตอร์กันเถอะ")
+print("-- ทายเลขจำนวนเต็มตั้งแต่ 1 - 20 --")
+for i in range(6):
+
+    #รับค่าการทายจากผู้ใช้
+    print(f"ความพยายามครั้งที่{i+1}")
+    guess_random = int(input("What is your guess number (0-9)?: "))
+
+    #condition ==> if-elif-else
+    if test_random == guess_number:
+       print("ยูเก่งมาก มั่วถูกตั้งแต่ครั้งแรกเลย เทพจริงๆ")
+       break
+    if guess_number < test_random:
+        print("ผิดจ้า น้ายไปเนอะ")
+    if guess_number > test_random:
+        print("ผิดจ้า มากไปเนอะ") 
